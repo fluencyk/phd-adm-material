@@ -1,2 +1,2 @@
 # Paper
-Pre-Print Papers
+Preprint Papers
