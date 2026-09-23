@@ -18,20 +18,26 @@ LLM_REF_DIR = Path("_llm_ref")
 LLM_REF_DIR.mkdir(exist_ok=True)
 
 
-import sys
+while True:
 
-category = sys.argv[1]
-index = int(sys.argv[2])
-
-pdf_path = Path(REF_MATERIALS[category][index])
-md_path = LLM_REF_DIR / pdf_path.with_suffix(".md").name
-
-
-if not pdf_path.is_file():
-    raise FileNotFoundError(
-        f"Reference PDF not found: {pdf_path}"
+    pdf_index = input(
+        "Type the Converting-Ready PDF Index: "
     )
 
+    if not pdf_index.isdigit():
+        print("Please type a number.")
+        continue
+
+    pdf_index = int(pdf_index)
+
+    if pdf_index in range(len(REF_MATERIALS)):
+        break
+
+    print("Not a right index number, try again!")
+
+
+pdf_path = Path(REF_MATERIALS[pdf_index])
+md_path = LLM_REF_DIR / pdf_path.with_suffix(".md").name
 
 md_path.write_text(
     pf4llm.to_markdown(pdf_path),
