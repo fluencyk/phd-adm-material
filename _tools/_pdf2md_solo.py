@@ -13,15 +13,36 @@ import pymupdf4llm as pf4llm
 
 from _reference._ref_material_list import REF_MATERIALS
 
-
-LLM_REF_DIR = Path("_llm_ref")
-LLM_REF_DIR.mkdir(exist_ok=True)
-
-
 import sys
+
+
+LLM_REF_MAP = {
+
+    "profile":
+    "_llm_ref/_hair_profile",
+
+    "research":
+    "_llm_ref/_hair_research",
+
+    "submitted_docs":
+    "_llm_ref/_hair_submitted_docs"
+
+}
+
 
 category = sys.argv[1]
 index = int(sys.argv[2])
+
+
+LLM_REF_DIR = Path(
+    LLM_REF_MAP[category]
+)
+
+LLM_REF_DIR.mkdir(
+    parents=True,
+    exist_ok=True
+)
+
 
 pdf_path = Path(REF_MATERIALS[category][index])
 md_path = LLM_REF_DIR / pdf_path.with_suffix(".md").name
