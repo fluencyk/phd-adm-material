@@ -77,11 +77,11 @@ url_list = []
 
 for md_file in md_files:
 
-    relative_path = md_file.as_posix()
+    path_as_str = md_file.as_posix()
 
     url = (
         GITHUB_RAW_PREFIX
-        + relative_path
+        + path_as_str
     )
 
     url_list.append(url)
@@ -95,16 +95,23 @@ output_file = (
 )
 
 
+hair_urls = {
+    category: url_list
+}
+
+
+json_text = json.dumps(
+    hair_urls,
+    indent=4,
+    ensure_ascii=False
+)
+
+
 output_file.write_text(
 
-    json.dumps(
-        {
-            category: url_list
-        },
-        indent=4,
-        ensure_ascii=False
-    ),
-
+    "\n"
+    + json_text
+    + "\n",
     encoding="utf-8"
 
 )
@@ -113,3 +120,8 @@ output_file.write_text(
 print(
     f"[OK] Generated: {output_file}"
 )
+
+
+print("\n")
+print(json_text)
+print("\n")
