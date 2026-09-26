@@ -1,5 +1,5 @@
 """
-_generate_hair_urls.py
+_hair_ops.py
 
 Generate LLM-alignment URL manifest
 from converted Markdown materials.
@@ -15,6 +15,8 @@ Output:
 from pathlib import Path
 import json
 import sys
+
+from _tools._git_ops import git_publish
 
 
 HAIR_REF_MAP = {
@@ -37,19 +39,31 @@ GITHUB_RAW_PREFIX = (
 )
 
 
+operation = sys.argv[1]
 
-category = sys.argv[1]
+
+if operation == "gitops":
+
+    git_publish(
+        [
+            "_llm_ref/_hair_profile/_hair_urls_profile.json",
+            "_llm_ref/_hair_research/_hair_urls_research.json",
+            "_llm_ref/_hair_submitted_docs/_hair_urls_submitted_docs.json"
+        ]
+    )
+
+    sys.exit()
 
 
-if category not in HAIR_REF_MAP:
+if operation not in HAIR_REF_MAP:
 
     raise ValueError(
-        f"Unsupported category: {category}"
+        f"Unsupported operation: {operation}"
     )
 
 
 target_dir = Path(
-    HAIR_REF_MAP[category]
+    HAIR_REF_MAP[operation]
 )
 
 
@@ -87,16 +101,15 @@ for md_file in md_files:
     url_list.append(url)
 
 
-
 output_file = (
     target_dir
     /
-    f"_hair_urls_{category}.json"
+    f"_hair_urls_{operation}.json"
 )
 
 
 hair_urls = {
-    category: url_list
+    operation: url_list
 }
 
 
