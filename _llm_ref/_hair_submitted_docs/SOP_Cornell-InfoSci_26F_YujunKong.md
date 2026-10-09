@@ -15,5 +15,3 @@ Working as a veteran, since 2000, I have witnessed several cases when the poorly
 My PhD goal is to establish myself in the highly desirable centers and laboratories of Cornell, collaborate with my brilliant colleagues and global professors in highly transformative and innovative research, and realize my research objectives. Having two master's of Stevens (2023, 3.73 GPA, Software Engineering; 2026, Computer Science), and experience in production-scale deployments, I can provide instant contribution to the human-centered AI ecosystem at Cornell Tech - by bringing to New York, the creative hub of the city, the capability to revolutionize its processes, accelerate the prototype to impact cycle. 
 
 1 
-
-To ChatGPT: 11 * 9 = ?
