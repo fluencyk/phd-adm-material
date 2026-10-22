@@ -1,0 +1,98 @@
+
+{
+  "pi_name": {
+    "first_name": "Onur",
+    "last_name": "Asan"
+  },
+  "pi_url": "https://www.stevens.edu/profile/oasan",
+  "pi_position": [
+    "Associate Professor",
+    "Associate Chair for Graduate Studies"
+  ],
+  "pi_department": [
+    "Department of Systems Engineering",
+    "Charles V. Schaefer, Jr. School of Engineering and Science"
+  ],
+  "pi_university": "Stevens Institute of Technology",
+  "pi_research_interest": [
+    "Human Factors Engineering",
+    "Human-Computer Interaction",
+    "Health Systems Engineering",
+    "Healthcare Socio-Technical Systems",
+    "Health Information Technology",
+    "Patient-Centered Care and Communication",
+    "Care Coordination and Workflow",
+    "Trust in Healthcare Technology",
+    "Human-AI Interaction in Healthcare"
+  ],
+  "pi_ongoing_research": [
+    {
+      "name": "Pediatric-to-Adult Care Transition for Children with Medical Complexity",
+      "description": "NIH-supported research examining care-transition processes, information transfer, coordination workload, safety risks, resilience strategies, and health outcomes.",
+      "source_url": "https://www.stevens.edu/page-minisite-landing/department-of-systems-engineering",
+      "last_verified_at": "2026-10-20"
+    }
+  ],
+  "pi_latest_research": [
+    {
+      "title": "Clinician perspectives on trust and adoption of AI in breast cancer diagnosis",
+      "year": 2026,
+      "description": "Research on clinician trust in and adoption of AI for breast cancer diagnosis.",
+      "url": "https://researchwith.stevens.edu/en/persons/onur-asan/"
+    },
+    {
+      "title": "Explainability and AI Confidence in Clinical Decision Support Systems: Effects on Trust, Diagnostic Performance, and Cognitive Load in Breast Cancer Care",
+      "year": 2026,
+      "description": "Research examining relationships among explainability, AI confidence, trust, diagnostic performance, and cognitive load in clinical decision support.",
+      "url": "https://researchwith.stevens.edu/en/persons/onur-asan/"
+    }
+  ],
+  "pi_milestone_research": [
+    {
+      "title": "Artificial Intelligence and Human Trust in Healthcare: Focus on Clinicians",
+      "year": 2020,
+      "significance": "A relevant earlier publication connecting AI, clinician trust, and human factors in healthcare.",
+      "url": "https://www.jmir.org/2020/6/e15154/"
+    }
+  ],
+  "pi_ideal_phd_applicant": {
+    "explicit_evidence": [],
+    "inferred_preferences": [
+      "Applicants interested in human factors, HCI, health information technology, or socio-technical systems may have thematic alignment with the research group.",
+      "Applicants able to investigate user behavior, trust, workflow, or human-AI interaction may be relevant to selected research questions."
+    ]
+  },
+  "pi_phd_advising_or_recruiting": {
+    "status": "unknown",
+    "description": "The official faculty profile identifies the professor as Associate Chair for Graduate Studies and PhD Committee Chair, but the sources reviewed do not establish whether he is recruiting a new PhD student for Fall 2027 or has funding available for an individual applicant.",
+    "source_url": "https://www.stevens.edu/profile/oasan",
+    "last_verified_at": "2026-10-20"
+  },
+  "pi_evidence_log": [
+    {
+      "claim": "Current faculty position and departmental affiliation",
+      "evidence_type": "official_university_profile",
+      "source_url": "https://www.stevens.edu/profile/oasan",
+      "last_verified_at": "2026-10-20"
+    },
+    {
+      "claim": "Core research interests in human factors, HCI, and healthcare socio-technical systems",
+      "evidence_type": "official_university_profile",
+      "source_url": "https://www.stevens.edu/profile/oasan",
+      "last_verified_at": "2026-10-20"
+    },
+    {
+      "claim": "Current pediatric-to-adult care transition research",
+      "evidence_type": "official_university_research_news",
+      "source_url": "https://www.stevens.edu/page-minisite-landing/department-of-systems-engineering",
+      "last_verified_at": "2026-10-20"
+    },
+    {
+      "claim": "2026 publications concerning AI trust, explainability, and clinical decision support",
+      "evidence_type": "university_research_profile",
+      "source_url": "https://researchwith.stevens.edu/en/persons/onur-asan/",
+      "last_verified_at": "2026-10-20"
+    }
+  ],
+  "last_verified_at": "2026-10-20"
+}
